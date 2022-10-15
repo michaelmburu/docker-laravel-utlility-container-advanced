@@ -5,7 +5,7 @@ services:
     #image: 'nginx:stable-alpine'
     build:
       context: .
-      dockerfile: dockerfiles/nginx.dockerfile #nginx.dockerfile references folders outside of dockerfiles folder % sets the reference context to global
+      dockerfile: dockerfiles/nginx.dockerfile #nginx.dockerfile references folders outside of dockerfiles folder, . sets the reference context to global
     ports:
       - '8000:80'
     volumes:
